@@ -184,7 +184,7 @@ const Card = memo(({ card, index }) => {
               <button
                 onClick={handleGenerateSubtasks}
                 disabled={aiLoading}
-                className="w-full mt-2 px-2 py-1 bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded text-xs hover:from-purple-600 hover:to-pink-600 disabled:opacity-50 disabled:cursor-not-allowed"
+                className="w-full mt-2 px-2 py-1 bg-primary-500 text-white rounded text-xs hover:bg-primary-600 disabled:opacity-50 disabled:cursor-not-allowed"
               >
                 {aiLoading ? '⏳ Generating...' : '✨ AI Suggest Subtasks'}
               </button>

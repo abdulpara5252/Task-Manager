@@ -61,7 +61,7 @@ const BoardPage = () => {
   }
 
   return (
-    <div className="h-screen bg-gradient-to-br from-blue-50 to-purple-50">
+    <div className="h-screen bg-primary-50">
       <Board board={board} />
     </div>
   );

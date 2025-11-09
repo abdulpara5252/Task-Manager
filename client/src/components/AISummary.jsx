@@ -28,7 +28,7 @@ const AISummary = ({ boardId }) => {
       <button
         onClick={handleGenerateSummary}
         disabled={loading}
-        className="px-4 py-2 bg-gradient-to-r from-blue-500 to-purple-500 text-white rounded-lg hover:from-blue-600 hover:to-purple-600 disabled:opacity-50 disabled:cursor-not-allowed font-medium shadow-md transition-all"
+        className="px-4 py-2 bg-primary-500 text-white rounded-lg hover:bg-primary-600 disabled:opacity-50 disabled:cursor-not-allowed font-medium shadow-md transition-all"
       >
         {loading ? '⏳ Generating...' : '🧠 AI Summarize Board'}
       </button>
@@ -68,7 +68,7 @@ const AISummary = ({ boardId }) => {
             </div>
 
             {/* AI Summary */}
-            <div className="bg-gradient-to-r from-blue-50 to-purple-50 rounded-lg p-4 mb-4">
+            <div className="bg-primary-50 rounded-lg p-4 mb-4">
               <h4 className="font-semibold text-gray-800 mb-2">AI Insights:</h4>
               <p className="text-gray-700 leading-relaxed">{summary.summary}</p>
             </div>

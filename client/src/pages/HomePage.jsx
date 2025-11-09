@@ -44,20 +44,20 @@ const HomePage = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50">
+    <div className="min-h-screen bg-primary-50">
       {/* Header */}
       <div className="bg-white shadow-md">
         <div className="max-w-7xl mx-auto px-6 py-6">
           <div className="flex justify-between items-center">
             <div>
-              <h1 className="text-4xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+              <h1 className="text-4xl font-bold text-primary-600">
                 AI Task Manager
               </h1>
               <p className="text-gray-600 mt-1">Organize your work with AI-powered insights</p>
             </div>
             <button
               onClick={() => setShowCreateForm(true)}
-              className="px-6 py-3 bg-gradient-to-r from-blue-500 to-purple-500 text-white rounded-lg hover:from-blue-600 hover:to-purple-600 font-medium shadow-lg transition-all"
+              className="px-6 py-3 bg-primary-500 text-white rounded-lg hover:bg-primary-600 font-medium shadow-lg transition-all"
             >
               + Create New Board
             </button>
