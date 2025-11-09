@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import toast from 'react-hot-toast';
+import API_URL from '../config/api';
 
 const AISummary = ({ boardId }) => {
   const [loading, setLoading] = useState(false);
@@ -10,7 +11,7 @@ const AISummary = ({ boardId }) => {
   const handleGenerateSummary = async () => {
     setLoading(true);
     try {
-      const response = await axios.post('http://localhost:5000/api/ai/summary', { boardId });
+      const response = await axios.post(`${API_URL}/ai/summary`, { boardId });
       setSummary(response.data);
       setShowModal(true);
       toast.success('🧠 Summary generated!');
