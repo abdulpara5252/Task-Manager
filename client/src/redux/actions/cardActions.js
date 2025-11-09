@@ -55,7 +55,9 @@ export const generateAISubtasks = createAsyncThunk(
   async ({ cardId, title, description }, { rejectWithValue }) => {
     try {
       const response = await axios.post(`${API_URL}/ai/subtasks`, { title, description });
-      return { cardId, subtasks: response.data.subtasks };
+      const subtasks = response.data.subtasks;
+      await axios.put(`${API_URL}/cards/${cardId}`, { subtasks });
+      return { cardId, subtasks };
     } catch (error) {
       return rejectWithValue(error.response?.data || error.message);
     }
