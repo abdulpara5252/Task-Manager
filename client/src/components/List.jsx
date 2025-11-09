@@ -62,11 +62,11 @@ const List = memo(({ list, index }) => {
   );
 
   const listColors = [
-    'bg-blue-100 border-blue-300',
-    'bg-green-100 border-green-300',
-    'bg-purple-100 border-purple-300',
-    'bg-orange-100 border-orange-300',
-    'bg-pink-100 border-pink-300'
+    'bg-[#B3E5FC] border-[#4FC3F7]',
+    'bg-[#C8E6C9] border-[#66BB6A]',
+    'bg-[#E1BEE7] border-[#AB47BC]',
+    'bg-[#FFCCBC] border-[#FF7043]',
+    'bg-[#F8BBD0] border-[#EC407A]'
   ];
   const colorClass = listColors[index % listColors.length];
 
